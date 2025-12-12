@@ -7,6 +7,7 @@ typedef struct stack {
 Item * contents;
 int top;
 int size;
+int choi;
 } Stack;
 
 Stack * create_stack(int initial_size);
@@ -18,4 +19,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
