@@ -9,6 +9,7 @@ Stack * create_stack(int initial_size)
 	s->contents = (int *)malloc(initial_size*sizeof(Item));
 	s->top=0;
 	s->size=initial_size;
+	printf("choiyeonjin");
 	return s;
 }
 
@@ -73,4 +74,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
